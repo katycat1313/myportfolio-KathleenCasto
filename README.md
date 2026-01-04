@@ -2,6 +2,8 @@
 
 Welcome to my interactive portfolio. I decided to build something a little different—a chatbot interface that showcases my UI/UX design work and developer journey in a conversational way.
 
+**[➡️ View the Live Demo](https://your-netlify-url.netlify.app/)**
+
 Instead of a static list of projects, this site adapts to who you are (a hiring manager, a potential client, or just exploring) and guides you through my work accordingly.
 
 ## 🚀 How It Works
@@ -9,6 +11,8 @@ Instead of a static list of projects, this site adapts to who you are (a hiring 
 1.  **The Hook:** It starts with a welcome animation and asks for your intent.
 2.  **The Logic:** Based on your choice, the conversation flows differently to show you the most relevant projects.
 3.  **The Tech:** It's built to be fast, accessible, and responsive.
+
+![Screenshot of the portfolio chatbot interface](https://via.placeholder.com/800x450.png?text=Your+Portfolio+Screenshot+Here)
 
 ## 🛠️ Under the Hood
 

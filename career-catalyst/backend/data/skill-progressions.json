@@ -1,0 +1,230 @@
+{
+    "description": "Career progression paths and skill requirements across multiple fields",
+    "software_engineering": {
+        "path": "Junior Developer → Mid-Level Developer → Senior Developer → Staff/Principal Engineer",
+        "typical_timeline": "7-10 years to reach senior level",
+        "progression": {
+            "junior_to_mid": {
+                "time_needed": "2-3 years",
+                "skills_to_develop": [
+                    "Master 2-3 programming languages deeply",
+                    "Understanding of system design basics",
+                    "Write comprehensive tests",
+                    "Code review skills",
+                    "Debugging complex issues independently",
+                    "Contribute to technical decisions"
+                ],
+                "experience_needed": [
+                    "Shipped 3+ production features",
+                    "Fixed production bugs",
+                    "Participated in on-call rotation",
+                    "Mentored at least 1 junior"
+                ]
+            },
+            "mid_to_senior": {
+                "time_needed": "3-5 years",
+                "skills_to_develop": [
+                    "Advanced system design and architecture",
+                    "Technical leadership and influence",
+                    "Breaking down large projects",
+                    "Cross-team collaboration",
+                    "Technical strategy and trade-offs",
+                    "Interviewing and hiring"
+                ],
+                "experience_needed": [
+                    "Led multi-month projects end-to-end",
+                    "Designed systems used by multiple teams",
+                    "Mentored 3+ engineers to promotion",
+                    "Made architectural decisions with org impact",
+                    "Improved team processes"
+                ]
+            }
+        }
+    },
+    "ai_ml_engineering": {
+        "path": "Software Engineer → ML Engineer → Senior ML Engineer → ML Architect/Research Scientist",
+        "typical_timeline": "5-8 years (requires strong SWE foundation first)",
+        "prerequisites": "Most AI/ML roles require 2-5 years SWE experience BEFORE transitioning",
+        "progression": {
+            "swe_to_ml": {
+                "time_needed": "1-2 years of dedicated ML learning + projects",
+                "skills_to_develop": [
+                    "Strong Python and data structures",
+                    "Linear algebra, calculus, statistics",
+                    "ML fundamentals (supervised, unsupervised, reinforcement)",
+                    "Deep learning frameworks (TensorFlow, PyTorch)",
+                    "Model evaluation and validation",
+                    "Feature engineering"
+                ],
+                "projects_needed": [
+                    "3+ ML projects with real data",
+                    "At least 1 deployed ML model",
+                    "Kaggle or research competitions (optional but helpful)",
+                    "OpenAI/Hugging Face contributions"
+                ]
+            },
+            "junior_ml_to_mid": {
+                "time_needed": "2-4 years",
+                "skills_to_develop": [
+                    "MLOps and model deployment",
+                    "Distributed training",
+                    "Model optimization and compression",
+                    "A/B testing for ML",
+                    "Production ML monitoring",
+                    "Cloud ML platforms (Sagemaker, Vertex AI)"
+                ],
+                "experience_needed": [
+                    "Built and deployed 5+ ML models to production",
+                    "Improved model performance by measurable amount",
+                    "Set up ML pipelines",
+                    "Handled data drift and model retraining"
+                ]
+            },
+            "mid_to_senior_ml": {
+                "time_needed": "3-5 years",
+                "skills_to_develop": [
+                    "ML system architecture",
+                    "Research to production pipeline",
+                    "Team and project leadership",
+                    "Strategic ML roadmapping",
+                    "State-of-the-art techniques (LLMs, etc.)",
+                    "Cross-functional stakeholder management"
+                ],
+                "experience_needed": [
+                    "Led ML team or major ML initiative",
+                    "Designed ML architectures for company products",
+                    "Published research or patents (bonus)",
+                    "Measurable business impact from ML work"
+                ]
+            }
+        },
+        "reality_check": "Entry-level 'AI Engineer' jobs are extremely rare. Most require 3+ years experience. Start as SWE or Data Analyst, then transition."
+    },
+    "ui_ux_design": {
+        "path": "Junior Designer → Mid-Level Designer → Senior Designer → Lead/Principal Designer",
+        "typical_timeline": "5-7 years to reach senior level",
+        "progression": {
+            "junior_to_mid": {
+                "time_needed": "2-3 years",
+                "skills_to_develop": [
+                    "User research methods",
+                    "Design systems thinking",
+                    "Accessibility (WCAG standards)",
+                    "Prototyping and testing",
+                    "Stakeholder communication",
+                    "Data-driven design decisions"
+                ],
+                "portfolio_evolution": [
+                    "Start: School projects + 1-2 real projects",
+                    "Goal: 5-8 professional projects with measurable impact",
+                    "Shows iteration and user testing",
+                    "Demonstrates cross-functional collaboration"
+                ]
+            },
+            "mid_to_senior": {
+                "time_needed": "3-4 years",
+                "skills_to_develop": [
+                    "Design strategy and vision",
+                    "Product thinking",
+                    "Team leadership and mentoring",
+                    "Design operations",
+                    "Influencing without authority",
+                    "Business acumen"
+                ],
+                "portfolio_evolution": [
+                    "Led major redesigns or new products",
+                    "Strategic work, not just execution",
+                    "Business metrics and impact",
+                    "Org-level influence examples"
+                ]
+            }
+        }
+    },
+    "digital_marketing": {
+        "path": "Marketing Coordinator → Marketing Specialist → Marketing Manager → Director of Marketing",
+        "typical_timeline": "5-8 years to reach manager level",
+        "progression": {
+            "coordinator_to_specialist": {
+                "time_needed": "1-2 years",
+                "skills_to_develop": [
+                    "Deep expertise in 2-3 channels (SEO, PPC, email, social)",
+                    "Marketing automation platforms",
+                    "Analytics and reporting",
+                    "A/B testing methodology",
+                    "Copywriting fundamentals",
+                    "Budget management basics"
+                ],
+                "experience_needed": [
+                    "Managed campaigns with >$50k budget",
+                    "Improved KPIs by measurable amount",
+                    "Operated marketing tech stack",
+                    "Created content strategy"
+                ]
+            },
+            "specialist_to_manager": {
+                "time_needed": "3-5 years",
+                "skills_to_develop": [
+                    "Full-funnel marketing strategy",
+                    "Team management",
+                    "Budget >$250k",
+                    "Vendor management",
+                    "Cross-functional leadership",
+                    "Marketing data science"
+                ],
+                "experience_needed": [
+                    "Managed 2+ direct reports",
+                    "Owned entire marketing channel",
+                    "Drove significant revenue growth",
+                    "Product launch experience"
+                ]
+            }
+        }
+    },
+    "data_science": {
+        "path": "Data Analyst → Data Scientist → Senior Data Scientist → ML/AI Specialist or Manager",
+        "typical_timeline": "4-6 years to reach senior DS level",
+        "prerequisites": "Strong statistics, math, and programming foundation required",
+        "progression": {
+            "analyst_to_scientist": {
+                "time_needed": "2-3 years",
+                "skills_to_develop": [
+                    "Advanced statistics and probability",
+                    "Machine learning algorithms",
+                    "Python/R for modeling",
+                    "Feature engineering",
+                    "Model evaluation and validation",
+                    "Experiment design"
+                ],
+                "experience_needed": [
+                    "Built predictive models in production",
+                    "Designed and analyzed A/B tests",
+                    "Created dashboards and visualizations",
+                    "Communicated insights to stakeholders"
+                ]
+            },
+            "scientist_to_senior": {
+                "time_needed": "2-4 years",
+                "skills_to_develop": [
+                    "Deep learning and advanced ML",
+                    "Causal inference",
+                    "MLOps and model deployment",
+                    "Team and project leadership",
+                    "Business strategy alignment",
+                    "Research and innovation"
+                ],
+                "experience_needed": [
+                    "Led data science projects end-to-end",
+                    "Mentored junior data scientists",
+                    "Published research or case studies",
+                    "Drove significant business decisions with data"
+                ]
+            }
+        }
+    },
+    "general_rules": {
+        "experience_cannot_be_rushed": "Promotions require demonstrated impact over time. Claims of 'senior' level with <3 years total experience should be questioned.",
+        "titles_vary_by_company": "A 'senior' at a startup might be 'mid' at FAANG. Focus on skills and impact, not just title.",
+        "switching_fields_resets_timeline": "Moving from SWE to ML or Design to PM typically means starting 1-2 levels down.",
+        "continuous_learning_required": "Tech changes fast. Ongoing skill development is mandatory, not optional."
+    }
+}

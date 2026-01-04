@@ -1,0 +1,137 @@
+{
+    "description": "Location-based salary adjustments for remote work. Companies often use geographic cost of living multipliers.",
+    "location_multipliers": {
+        "high_cost_areas": {
+            "multiplier": 1.0,
+            "locations": [
+                "San Francisco Bay Area",
+                "New York City",
+                "Seattle",
+                "Boston",
+                "Los Angeles",
+                "Washington DC"
+            ],
+            "note": "Baseline - these are what most salary data reflects"
+        },
+        "medium_high_cost": {
+            "multiplier": 0.85,
+            "locations": [
+                "Austin",
+                "Denver",
+                "Chicago",
+                "Portland",
+                "San Diego",
+                "Miami"
+            ],
+            "note": "15% adjustment below high-cost areas"
+        },
+        "medium_cost": {
+            "multiplier": 0.75,
+            "locations": [
+                "Atlanta",
+                "Dallas",
+                "Phoenix",
+                "Philadelphia",
+                "Charlotte",
+                "Nashville"
+            ],
+            "note": "25% adjustment - many mid-size cities"
+        },
+        "low_medium_cost": {
+            "multiplier": 0.65,
+            "locations": [
+                "Indianapolis",
+                "Kansas City",
+                "Columbus",
+                "Pittsburgh",
+                "Richmond"
+            ],
+            "note": "35% adjustment"
+        },
+        "low_cost_areas": {
+            "multiplier": 0.55,
+            "locations": [
+                "West Virginia",
+                "Mississippi",
+                "Arkansas",
+                "Oklahoma",
+                "Rural areas"
+            ],
+            "note": "45% adjustment - lowest cost of living areas"
+        }
+    },
+    "remote_work_reality": {
+        "fully_remote_companies": {
+            "description": "Companies hiring nationwide remote",
+            "salary_approach": "Most use location-based pay bands",
+            "examples": [
+                "GitLab",
+                "Automattic",
+                "Zapier",
+                "Buffer"
+            ],
+            "typical_adjustment": "Use multipliers above, sometimes less aggressive (0.7-1.0 range)"
+        },
+        "traditional_companies_gone_remote": {
+            "description": "Traditional companies offering remote roles",
+            "salary_approach": "Often pay based on office location, not employee location",
+            "note": "If role is 'remote from SF office', you might get SF salary regardless of where you live"
+        },
+        "startups": {
+            "description": "Early-stage startups",
+            "salary_approach": "Highly variable - some ignore location, others strictly apply multipliers",
+            "equity_consideration": "May offer more equity to compensate for location-adjusted cash"
+        }
+    },
+    "west_virginia_specific": {
+        "cost_of_living_index": 0.55,
+        "reality_check": "WV has one of the lowest costs of living in US",
+        "salary_expectations": {
+            "software_engineer_junior_wv": {
+                "local_company": "$50k-$65k (typical for local WV tech companies)",
+                "remote_national": "$60k-$75k (with location adjustment)",
+                "remote_ignoring_location": "$80k-$95k (rare but possible)"
+            },
+            "software_engineer_mid_wv": {
+                "local_company": "$65k-$85k",
+                "remote_national": "$75k-$110k (with adjustment)",
+                "remote_ignoring_location": "$130k-$150k (very rare)"
+            },
+            "ai_engineer_wv": {
+                "local_company": "Extremely rare - no local market",
+                "remote_national": "$80k-$110k for junior/mid with adjustment",
+                "remote_ignoring_location": "$115k-$180k (top-tier companies ignoring location)"
+            }
+        },
+        "strategies_for_wv_residents": [
+            "Target companies with location-agnostic pay (GitLab, Zapier, some crypto/web3 companies)",
+            "Focus on high-value skills (AI/ML, blockchain, specialized niches) where talent scarcity overrides location",
+            "Negotiate hard - emphasize value delivered, not cost of living",
+            "Consider contracting/consulting at higher hourly rates",
+            "Look for companies based in medium-cost cities (not SF/NYC) - smaller adjustment",
+            "Build strong portfolio to justify top-of-band compensation regardless of location"
+        ]
+    },
+    "how_to_use_in_analysis": {
+        "step_1": "Get user's location (state/city)",
+        "step_2": "Identify cost of living tier",
+        "step_3": "Apply multiplier to market salary data",
+        "step_4": "Provide both numbers: 'National average' and 'Adjusted for your location'",
+        "step_5": "Explain strategies to maximize salary despite location",
+        "example": "Software Engineer Mid-level national average: $130k. Adjusted for West Virginia (0.55 multiplier): $72k. However, some companies (GitLab, Zapier) ignore location - target those."
+    },
+    "salary_negotiation_tips_by_location": {
+        "low_cost_area_advantages": [
+            "Lower living costs mean you can save more at same salary",
+            "Highlight this in negotiations: '$75k in WV = $136k in SF in terms of purchasing power'",
+            "Emphasize remote work benefits to company: 'You save on office space, I save on rent'",
+            "Show total comp value: salary + WFH stipend + benefits + equity"
+        ],
+        "what_to_ask_during_interviews": [
+            "Do you use location-based pay bands?",
+            "What location is this role's salary benchmarked against?",
+            "Is there room to negotiate above the pay band for exceptional candidates?",
+            "Do you offer equity/bonuses that could offset location adjustment?"
+        ]
+    }
+}

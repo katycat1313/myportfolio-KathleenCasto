@@ -1,0 +1,314 @@
+{
+    "description": "Quality assessment rubrics for evaluating work across multiple professions. Based on industry standards and hiring manager expectations.",
+    "github_code_quality": {
+        "what_to_look_for": {
+            "code_structure": [
+                "Consistent naming conventions",
+                "Logical file/folder organization",
+                "Separation of concerns (not everything in one giant file)",
+                "Use of design patterns appropriately"
+            ],
+            "documentation": [
+                "README explains purpose, setup, and usage",
+                "Code comments explain WHY, not just WHAT",
+                "API documentation for libraries",
+                "Contributing guidelines for open source"
+            ],
+            "best_practices": [
+                "Error handling and validation",
+                "Security considerations (no hardcoded secrets)",
+                "Testing (unit, integration, or e2e)",
+                "CI/CD setup",
+                "Dependency management (not 100+ unused packages)"
+            ],
+            "code_quality_indicators": [
+                "DRY principle (Don't Repeat Yourself)",
+                "Functions are small and focused",
+                "Clear variable/function names",
+                "Avoids unnecessary complexity",
+                "Edge cases handled"
+            ]
+        },
+        "red_flags": [
+            "No README files",
+            "All projects are tutorials/bootcamp exercises",
+            "Code hasn't been updated in 2+ years",
+            "Tons of repos with <10 commits each",
+            "No original projects (all forks)",
+            "Hardcoded API keys or passwords",
+            "No tests in any project",
+            "Copy-pasted code without understanding"
+        ],
+        "level_indicators": {
+            "junior": {
+                "expected": [
+                    "2-5 projects",
+                    "Clear documentation",
+                    "Working applications",
+                    "Basic testing"
+                ],
+                "bonus": [
+                    "Deployed apps",
+                    "1-2 contributions to open source",
+                    "Personal blog about learning"
+                ]
+            },
+            "mid": {
+                "expected": [
+                    "5-10 projects",
+                    "Complex full-stack apps",
+                    "Testing suite",
+                    "CI/CD",
+                    "Clear git history"
+                ],
+                "bonus": [
+                    "Published npm/pip packages",
+                    "Meaningful open source contributions",
+                    "Technical blog posts"
+                ]
+            },
+            "senior": {
+                "expected": [
+                    "Architected scalable systems",
+                    "Led open source projects",
+                    "Advanced testing strategies",
+                    "Performance optimization examples"
+                ],
+                "bonus": [
+                    "Conference talks",
+                    "Widely-used libraries",
+                    "Technical thought leadership"
+                ]
+            }
+        }
+    },
+    "portfolio_design_quality": {
+        "what_to_look_for": {
+            "visual_design": [
+                "Consistent color palette and typography",
+                "Proper hierarchy and spacing",
+                "Professional polish (no lorem ipsum)",
+                "Responsive design",
+                "Accessible contrast ratios"
+            ],
+            "ux_quality": [
+                "Clear navigation",
+                "Fast load times",
+                "Mobile-friendly",
+                "Clear calls to action",
+                "User flows make sense"
+            ],
+            "case_studies": [
+                "Problem statement clearly defined",
+                "Research and discovery process shown",
+                "Design iterations and rationale",
+                "Final solution with results/metrics",
+                "Reflection on what was learned"
+            ],
+            "technical_execution": [
+                "HTTPS enabled",
+                "No broken links or images",
+                "SEO basics in place",
+                "Performance optimized",
+                "Works in major browsers"
+            ]
+        },
+        "red_flags": [
+            "Site doesn't load or times out",
+            "Mobile version is broken",
+            "All work is 'coming soon' or concept work",
+            "No process shown, just final mockups",
+            "Stolen work or templates presented as original",
+            "Unprofessional domain name",
+            "Pop-ups or intrusive elements",
+            "No contact information"
+        ],
+        "level_indicators": {
+            "junior": {
+                "expected": [
+                    "3-5 projects",
+                    "Mix of school and personal work",
+                    "Shows design process",
+                    "Basic usability"
+                ],
+                "accept": "Some rough edges okay, focus is on potential and growth"
+            },
+            "mid": {
+                "expected": [
+                    "5-8 real-world projects",
+                    "Measurable impact shown",
+                    "Advanced prototypes",
+                    "Design system thinking"
+                ],
+                "expect": "Polish, professional case studies, cross-functional collaboration"
+            },
+            "senior": {
+                "expected": [
+                    "Strategic design work",
+                    "Led major initiatives",
+                    "Business impact metrics",
+                    "Thought leadership"
+                ],
+                "expect": "Work that influenced product direction or company strategy"
+            }
+        }
+    },
+    "marketing_portfolio_quality": {
+        "what_to_look_for": {
+            "campaign_examples": [
+                "Clear campaign objectives",
+                "Target audience definition",
+                "Multi-channel strategy",
+                "Measurable results (CTR, conversions, ROI)",
+                "A/B testing examples"
+            ],
+            "content_quality": [
+                "Writing is clear and persuasive",
+                "Proper grammar and spelling",
+                "Adapts tone for different audiences",
+                "SEO optimization demonstrated",
+                "Data-driven decision making"
+            ],
+            "analytics_literacy": [
+                "Shows understanding of key metrics",
+                "Can interpret data and draw insights",
+                "Uses data to optimize campaigns",
+                "ROI calculations",
+                "Attribution modeling awareness"
+            ],
+            "creativity_and_strategy": [
+                "Original campaign ideas",
+                "Problem-solving approach",
+                "Understanding of customer journey",
+                "Brand consistency",
+                "Competitive differentiation"
+            ]
+        },
+        "red_flags": [
+            "No metrics or results shown",
+            "All work is from school projects only",
+            "Copy-paste marketing buzzwords without substance",
+            "No understanding of analytics",
+            "Claims results without evidence",
+            "Poor writing quality",
+            "Doesn't understand target audience",
+            "No digital marketing experience (only print/traditional)"
+        ],
+        "level_indicators": {
+            "junior": {
+                "expected": [
+                    "Basic campaign management",
+                    "Content creation",
+                    "Social media",
+                    "Email marketing",
+                    "Analytics basics"
+                ],
+                "realistic_salary": "45k-65k"
+            },
+            "mid": {
+                "expected": [
+                    "Multi-channel campaigns",
+                    "Marketing automation",
+                    "A/B testing",
+                    "Budget management",
+                    "Team collaboration"
+                ],
+                "realistic_salary": "65k-90k"
+            },
+            "senior": {
+                "expected": [
+                    "Marketing strategy",
+                    "Team leadership",
+                    "Budget >100k",
+                    "Product launches",
+                    "Brand development"
+                ],
+                "realistic_salary": "90k-130k"
+            }
+        }
+    },
+    "writing_samples_quality": {
+        "what_to_look_for": {
+            "technical_writing": [
+                "Clear explanations of complex topics",
+                "Proper structure (intro, body, conclusion)",
+                "Examples and code snippets (if relevant)",
+                "Target audience awareness",
+                "No jargon without explanation"
+            ],
+            "content_writing": [
+                "Engaging headlines",
+                "Scannable formatting",
+                "SEO optimization",
+                "Clear CTAs",
+                "Persuasive but authentic voice"
+            ],
+            "copywriting": [
+                "Benefit-focused (not feature-focused)",
+                "Emotional connection",
+                "Urgency without being pushy",
+                "Brand voice consistency",
+                "A/B test results if available"
+            ],
+            "quality_indicators": [
+                "Grammar and spelling perfect",
+                "Varied sentence structure",
+                "Active voice (not passive)",
+                "Concrete examples, not vague claims",
+                "Proper citations/attribution"
+            ]
+        },
+        "red_flags": [
+            "Grammar and spelling errors",
+            "AI-generated text with no editing",
+            "Plagiarism",
+            "Too generic/templated",
+            "No understanding of audience",
+            "Clickbait without substance",
+            "Walls of text (no formatting)"
+        ]
+    },
+    "data_science_portfolio_quality": {
+        "what_to_look_for": {
+            "jupyter_notebooks": [
+                "Clear problem statement",
+                "Exploratory data analysis (EDA)",
+                "Data cleaning and preprocessing shown",
+                "Model selection rationale",
+                "Results interpretation",
+                "Conclusions and next steps"
+            ],
+            "technical_skills": [
+                "Statistical knowledge",
+                "Feature engineering",
+                "Model evaluation metrics",
+                "Visualization quality",
+                "Reproducible results"
+            ],
+            "business_impact": [
+                "Solves real problems",
+                "Actionable insights",
+                "Stakeholder communication",
+                "Deployment considerations",
+                "Ethics and bias awareness"
+            ]
+        },
+        "red_flags": [
+            "Only Kaggle competition notebooks",
+            "No data cleaning shown (unrealistic)",
+            "Trains on test data",
+            "No model evaluation",
+            "Can't explain why model works",
+            "Overfitting not addressed",
+            "No real-world datasets"
+        ]
+    },
+    "assessment_methodology": {
+        "step_1_fetch_content": "Actually download/fetch the portfolio, GitHub repos, or writing samples",
+        "step_2_analyze_against_rubric": "Compare content to field-specific quality indicators",
+        "step_3_identify_red_flags": "Look for disqualifying issues",
+        "step_4_determine_level": "Map quality to junior/mid/senior based on indicators",
+        "step_5_provide_evidence": "Quote specific examples from their work to support assessment",
+        "step_6_actionable_feedback": "Tell them exactly what to improve with concrete steps"
+    }
+}

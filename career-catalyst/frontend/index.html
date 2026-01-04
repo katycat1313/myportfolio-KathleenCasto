@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Catalyst AI - Your Intelligent Job Search Assistant</title>
+    <meta name="description" content="AI-powered job search automation that increases your hiring chances by 50%+">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Hero Section / Onboarding -->
+    <div id="hero-section" class="section active">
+        <div class="container">
+            <div class="hero-content">
+                <div class="logo">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                        <circle cx="24" cy="24" r="22" fill="url(#gradient1)" opacity="0.2" />
+                        <path d="M24 8L32 16L24 24L16 16L24 8Z" fill="url(#gradient1)" />
+                        <path d="M24 24L32 32L24 40L16 32L24 24Z" fill="url(#gradient2)" />
+                        <defs>
+                            <linearGradient id="gradient1" x1="8" y1="8" x2="40" y2="40">
+                                <stop offset="0%" stop-color="#667eea" />
+                                <stop offset="100%" stop-color="#764ba2" />
+                            </linearGradient>
+                            <linearGradient id="gradient2" x1="8" y1="8" x2="40" y2="40">
+                                <stop offset="0%" stop-color="#f093fb" />
+                                <stop offset="100%" stop-color="#f5576c" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <h1>Career Catalyst AI</h1>
+                </div>
+                <p class="tagline">Your intelligent job search assistant powered by 5 specialized AI agents</p>
+
+                <div class="value-props">
+                    <div class="prop">
+                        <span class="icon">🎯</span>
+                        <h3>Smart Matching</h3>
+                        <p>AI analyzes your skills and finds perfect-fit opportunities</p>
+                    </div>
+                    <div class="prop">
+                        <span class="icon">💰</span>
+                        <h3>Salary Intelligence</h3>
+                        <p>Know your worth with real market data</p>
+                    </div>
+                    <div class="prop">
+                        <span class="icon">⚡</span>
+                        <h3>Auto-Customize</h3>
+                        <p>Tailored resumes and cover letters in seconds</p>
+                    </div>
+                    <div class="prop">
+                        <span class="icon">🤝</span>
+                        <h3>Network Smart</h3>
+                        <p>Strategic LinkedIn outreach that works</p>
+                    </div>
+                </div>
+
+                <button id="start-btn" class="btn-primary">Get Started →</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Onboarding Section -->
+    <div id="onboarding-section" class="section">
+        <div class="container">
+            <div class="onboarding-card">
+                <h2>Let's Get Started</h2>
+                <p class="subtitle">Tell us about yourself so we can find your perfect opportunities</p>
+
+                <div class="form-group">
+                    <label for="resume-input">Your Resume</label>
+                    <div style="display: flex; gap: 12px; margin-bottom: 12px;">
+                        <input type="file" id="resume-file" accept=".pdf,.docx,.txt" style="display: none;">
+                        <button type="button" id="upload-resume-btn" class="btn-secondary"
+                            style="padding: 12px 24px;">📎 Upload Resume (PDF/DOCX/TXT)</button>
+                        <span id="file-name"
+                            style="color: var(--text-secondary); align-self: center; font-size: 14px;"></span>
+                    </div>
+                    <div style="text-align: center; margin: 12px 0; color: var(--text-secondary); font-size: 14px;">— OR
+                        —</div>
+                    <textarea id="resume-input"
+                        placeholder="Paste your resume here...&#10;&#10;Or describe your experience, skills, and background."
+                        rows="10"></textarea>
+                    <span class="hint">Tip: Include your experience, skills, education, and achievements</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="desired-position">Desired Position</label>
+                    <input type="text" id="desired-position" placeholder="e.g., Senior Product Manager">
+                </div>
+
+                <div class="form-group">
+                    <label for="desired-salary">Desired Salary ($)</label>
+                    <input type="number" id="desired-salary" placeholder="e.g., 120000">
+                </div>
+
+
+
+                <div class="form-group">
+                    <label for="current-location">Where Do You Currently Live?</label>
+                    <input type="text" id="current-location" placeholder="e.g., West Virginia, Texas, California">
+                    <span class="hint">📍 Affects salary estimates - companies adjust based on cost of living</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="desired-location">Where Do You Want to Work?</label>
+                    <input type="text" id="desired-location" placeholder="e.g., Remote, San Francisco, New York">
+                    <span class="hint">🎯 Filters job results - use "Remote" for work-from-home jobs</span>
+                </div>
+
+
+                <div class="credentials-section"
+                    style="margin-top: 32px; padding-top: 32px; border-top: 1px solid var(--border-color);">
+                    <h3 style="margin-bottom: 8px; font-size: 20px;">📊 Prove Your Skills (Optional)</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 24px; font-size: 14px;">
+                        Get honest feedback on your credentials. AI will tell you what works and what doesn't.
+                    </p>
+
+                    <div class="form-group">
+                        <label for="github-username">GitHub Username</label>
+                        <input type="text" id="github-username" placeholder="e.g., katycat1313">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="portfolio-url">Portfolio / Personal Website</label>
+                        <input type="url" id="portfolio-url" placeholder="https://yoursite.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="linkedin-url">LinkedIn Profile</label>
+                        <input type="url" id="linkedin-url" placeholder="https://linkedin.com/in/yourname">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="other-url">Writing Samples / Design Portfolio</label>
+                        <input type="url" id="other-url" placeholder="Medium, Behance, Dribbble, etc.">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="credential-context">Additional Context (Optional)</label>
+                        <textarea id="credential-context" rows="3"
+                            placeholder="e.g., 'My GitHub has older tutorial projects, but my recent work shows real progress' or 'I'm transitioning from marketing to tech'"></textarea>
+                        <span class="hint">Help the AI understand your situation better</span>
+                    </div>
+                </div>
+
+                <button id="analyze-btn" class="btn-primary">Analyze & Find Jobs →</button>
+                <div id="loading" class="loading hidden">
+                    <div class="spinner"></div>
+                    <p>AI agents are analyzing your profile...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dashboard Section -->
+    <div id="dashboard-section" class="section">
+        <div class="container-wide">
+            <header class="dashboard-header">
+                <div class="user-info">
+                    <h2>Welcome Back!</h2>
+                    <p id="user-summary">Your job search dashboard</p>
+                </div>
+                <button id="new-search-btn" class="btn-secondary">New Search</button>
+            </header>
+
+            <!-- Salary Intelligence Card -->
+            <div id="salary-card" class="insights-card hidden">
+                <div class="card-header">
+                    <h3>💰 Salary Intelligence</h3>
+                    <span class="badge" id="salary-verdict"></span>
+                </div>
+                <div class="card-body" id="salary-details"></div>
+            </div>
+
+            <!-- Quality Assessment Card -->
+            <div id="quality-card" class="insights-card hidden">
+                <div class="card-header">
+                    <h3>📊 Honest Skill Assessment</h3>
+                    <span class="badge" id="quality-rating"></span>
+                </div>
+                <div class="card-body" id="quality-details"></div>
+            </div>
+
+            <!-- Job Listings -->
+            <div class="jobs-section">
+                <div class="jobs-header">
+                    <h3>Your Matched Opportunities</h3>
+                    <div class="filters">
+                        <span id="job-count">0 jobs found</span>
+                    </div>
+                </div>
+                <div id="jobs-grid" class="jobs-grid">
+                    <!-- Jobs will be inserted here dynamically -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chat Interface -->
+    <div id="chat-interface" class="chat-interface hidden">
+        <div class="chat-header">
+            <h3>💬 Chat with Your Career Coach</h3>
+            <button id="close-chat" class="chat-close">×</button>
+        </div>
+        <div class="chat-messages" id="chat-messages">
+            <div class="chat-message ai-message">
+                <div class="message-content">
+                    👋 Hi! I've reviewed your profile. Ask me anything about your assessment, career strategy, or skill
+                    development!
+                </div>
+            </div>
+        </div>
+        <div class="chat-input-container">
+            <textarea id="chat-input" placeholder="Ask about your assessment, career advice, salary strategy..."
+                rows="2"></textarea>
+            <button id="send-chat" class="btn-primary">Send</button>
+        </div>
+    </div>
+
+    <!-- Chat Toggle Button -->
+    <button id="chat-toggle" class="chat-toggle hidden">
+        💬 Ask AI Coach
+    </button>
+
+    <!-- Application Modal -->
+    <div id="application-modal" class="modal hidden">
+        <div class="modal-content">
+            <button class="modal-close" id="close-modal">×</button>
+            <h2 id="modal-job-title">Customize Application</h2>
+
+            <div class="tabs">
+                <button class="tab active" data-tab="resume">Resume</button>
+                <button class="tab" data-tab="cover">Cover Letter</button>
+                <button class="tab" data-tab="network">Networking</button>
+            </div>
+
+            <div class="tab-content">
+                <div id="resume-tab" class="tab-pane active">
+                    <div id="resume-content"></div>
+                    <button class="btn-primary" id="copy-resume">Copy Resume</button>
+                </div>
+
+                <div id="cover-tab" class="tab-pane">
+                    <div id="cover-content"></div>
+                    <button class="btn-primary" id="copy-cover">Copy Cover Letter</button>
+                </div>
+
+                <div id="network-tab" class="tab-pane">
+                    <div id="network-content"></div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button id="mark-applied" class="btn-success">Mark as Applied</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

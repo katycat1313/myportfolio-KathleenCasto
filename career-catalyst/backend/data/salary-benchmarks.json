@@ -1,0 +1,263 @@
+{
+    "description": "Real salary benchmarks based on industry data from salary.com, levels.fyi, and BLS (2024-2025)",
+    "software_engineer": {
+        "junior": {
+            "years_experience": "0-2",
+            "salary_range": {
+                "min": 70000,
+                "median": 80000,
+                "max": 95000
+            },
+            "typical_skills": [
+                "JavaScript",
+                "Python",
+                "Git",
+                "HTML/CSS",
+                "Basic algorithms",
+                "One framework (React/Vue/Angular)"
+            ],
+            "red_flags_below": 60000
+        },
+        "mid": {
+            "years_experience": "2-5",
+            "salary_range": {
+                "min": 95000,
+                "median": 130000,
+                "max": 150000
+            },
+            "typical_skills": [
+                "Multiple languages",
+                "System design basics",
+                "Testing",
+                "CI/CD",
+                "Code review",
+                "Mentoring juniors"
+            ],
+            "red_flags_below": 85000
+        },
+        "senior": {
+            "years_experience": "5-10",
+            "salary_range": {
+                "min": 125000,
+                "median": 155000,
+                "max": 220000
+            },
+            "typical_skills": [
+                "Advanced system design",
+                "Architecture decisions",
+                "Leading teams",
+                "Technical strategy",
+                "Multiple tech stacks"
+            ],
+            "red_flags_below": 110000
+        },
+        "staff_principal": {
+            "years_experience": "10+",
+            "salary_range": {
+                "min": 180000,
+                "median": 220000,
+                "max": 350000
+            },
+            "typical_skills": [
+                "Org-wide impact",
+                "Technical vision",
+                "Cross-team leadership",
+                "Industry expertise"
+            ],
+            "red_flags_below": 160000
+        }
+    },
+    "ai_engineer": {
+        "junior": {
+            "years_experience": "0-3",
+            "minimum_requirements": [
+                "CS degree or equivalent",
+                "Python proficiency",
+                "Basic ML concepts",
+                "Deployed at least 1 ML model"
+            ],
+            "salary_range": {
+                "min": 90000,
+                "median": 115000,
+                "max": 135000
+            },
+            "typical_skills": [
+                "Python",
+                "TensorFlow/PyTorch",
+                "Basic NLP/CV",
+                "Data preprocessing",
+                "Model evaluation"
+            ],
+            "reality_check": "Most 'AI Engineer' roles require 2+ years ML experience. True entry-level AI roles are rare."
+        },
+        "mid": {
+            "years_experience": "3-6",
+            "salary_range": {
+                "min": 130000,
+                "median": 150000,
+                "max": 180000
+            },
+            "typical_skills": [
+                "Deep learning",
+                "MLOps",
+                "Model deployment",
+                "A/B testing",
+                "Production ML pipelines",
+                "Cloud platforms (AWS/GCP/Azure)"
+            ],
+            "minimum_requirements": [
+                "3+ production ML systems",
+                "Understanding of ML at scale"
+            ]
+        },
+        "senior": {
+            "years_experience": "6+",
+            "salary_range": {
+                "min": 160000,
+                "median": 195000,
+                "max": 300000
+            },
+            "typical_skills": [
+                "ML architecture",
+                "Research to production",
+                "Team leadership",
+                "Strategic AI initiatives",
+                "LLMs/Generative AI"
+            ],
+            "minimum_requirements": [
+                "Led ML teams",
+                "Shipped multiple ML products",
+                "Industry recognition"
+            ]
+        }
+    },
+    "machine_learning_engineer": {
+        "junior": {
+            "years_experience": "0-2",
+            "salary_range": {
+                "min": 75000,
+                "median": 100000,
+                "max": 125000
+            },
+            "typical_skills": [
+                "Python",
+                "scikit-learn",
+                "pandas/numpy",
+                "Basic ML algorithms",
+                "SQL"
+            ],
+            "minimum_requirements": [
+                "Strong Python skills",
+                "Understanding of ML fundamentals",
+                "Academic or project experience"
+            ]
+        },
+        "mid": {
+            "years_experience": "2-6",
+            "salary_range": {
+                "min": 120000,
+                "median": 145000,
+                "max": 180000
+            },
+            "typical_skills": [
+                "TensorFlow/PyTorch",
+                "Model optimization",
+                "Feature engineering",
+                "MLOps basics",
+                "Docker/Kubernetes"
+            ],
+            "minimum_requirements": [
+                "Built and deployed ML models in production",
+                "Experience with ML pipelines"
+            ]
+        },
+        "senior": {
+            "years_experience": "6+",
+            "salary_range": {
+                "min": 160000,
+                "median": 195000,
+                "max": 300000
+            },
+            "typical_skills": [
+                "Advanced MLOps",
+                "Distributed training",
+                "Model serving at scale",
+                "Research capabilities",
+                "Technical leadership"
+            ],
+            "minimum_requirements": [
+                "Led ML infrastructure",
+                "Mentored ML engineers",
+                "Published research or patents (bonus)"
+            ]
+        }
+    },
+    "ui_ux_designer": {
+        "junior": {
+            "years_experience": "0-2",
+            "salary_range": {
+                "min": 55000,
+                "median": 65000,
+                "max": 80000
+            },
+            "typical_skills": [
+                "Figma/Sketch",
+                "Basic user research",
+                "Wireframing",
+                "Prototyping",
+                "Visual design"
+            ],
+            "portfolio_requirements": [
+                "3-5 case studies",
+                "Shows process",
+                "At least 1 real project"
+            ]
+        },
+        "mid": {
+            "years_experience": "2-5",
+            "salary_range": {
+                "min": 75000,
+                "median": 95000,
+                "max": 120000
+            },
+            "typical_skills": [
+                "User research",
+                "Design systems",
+                "A/B testing",
+                "Stakeholder management",
+                "Accessibility"
+            ],
+            "portfolio_requirements": [
+                "5-8 case studies",
+                "Measurable impact",
+                "Cross-functional collaboration examples"
+            ]
+        },
+        "senior": {
+            "years_experience": "5+",
+            "salary_range": {
+                "min": 110000,
+                "median": 140000,
+                "max": 180000
+            },
+            "typical_skills": [
+                "Design strategy",
+                "Team leadership",
+                "Product thinking",
+                "Design operations",
+                "Influence without authority"
+            ],
+            "portfolio_requirements": [
+                "Strategic design work",
+                "Led major redesigns",
+                "Organizational impact"
+            ]
+        }
+    },
+    "evaluation_rules": {
+        "experience_inflation": "If someone claims senior/expert level with <5 years experience, flag as unrealistic",
+        "salary_reality_check": "If desired salary exceeds median for their level by >30%, mark as 'overreaching'",
+        "skill_gap_analysis": "Compare user's actual skills to 'typical_skills' for target role. Missing >50% = not ready",
+        "timeline_expectations": "Average time to reach senior level: 5-7 years. Anyone expecting faster needs exceptional circumstances"
+    }
+}

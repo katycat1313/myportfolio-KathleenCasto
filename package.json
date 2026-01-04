@@ -1,0 +1,15 @@
+{
+  "name": "ui-ux-showcasing",
+  "version": "1.0.0",
+  "description": "Portfolio with chatbot and digital products",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Kathleen Casto",
+  "license": "ISC",
+  "dependencies": {
+    "stripe": "^20.1.0"
+  }
+}

@@ -57,6 +57,7 @@ function startConversation() {
                 showQuickReplies([
                     { text: "I'm hiring for a UI/UX role", value: "hiring" },
                     { text: "I need design services", value: "client" },
+                    { text: "Buy a digital product", value: "buy_product" },
                     { text: "Just exploring", value: "exploring" }
                 ]);
             });
@@ -311,10 +312,37 @@ function handleQuickReply(reply) {
             });
             break;
 
+        case 'buy_product':
+            initiatePayment();
+            break;
+
         default:
             addBotMessage("Let me show you some of Kathleen's work!", 800, () => {
                 setTimeout(() => showProjects(), 1000);
             });
+    }
+}
+
+async function initiatePayment() {
+    addBotMessage("Great! I'm creating a secure payment link for the 'Example Digital Product'...", 1000);
+
+    try {
+        const response = await fetch('/.netlify/functions/create-stripe-payment', {
+            method: 'POST',
+        });
+
+        if (!response.ok) {
+            throw new Error(`Server error: ${response.status}`);
+        }
+
+        const data = await response.json();
+        const paymentUrl = data.url;
+
+        addBotMessage(`Please use the link below to complete your purchase. It will open in a new tab.<br><br><a href="${paymentUrl}" target="_blank" class="payment-link">Pay Now ($10.00)</a>`, 1000);
+
+    } catch (error) {
+        console.error('Payment initiation error:', error);
+        addBotMessage("I'm sorry, but I was unable to create a payment link at this time. Please try again later.", 1000);
     }
 }
 

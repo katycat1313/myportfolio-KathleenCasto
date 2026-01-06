@@ -38,4 +38,4 @@ If you're poking around the code, here is where everything lives:
 
 ---
 
-*Thanks for checking out my work! Feel free to reach out if you want to chat about design, code, or new opportunities.*
+*Thanks for checking out my work! Feel free to connect or reach out if you want to chat about design, code, or new opportunities.*

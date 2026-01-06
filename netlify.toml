@@ -1,6 +1,5 @@
 [build]
-  command = "echo 'No build required'"
-  publish = "."
+command = "echo 'Building portfolio - $(date)'"  publish = "."
 
 [functions]
   directory = "netlify/functions"

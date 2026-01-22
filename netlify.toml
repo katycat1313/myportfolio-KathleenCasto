@@ -1,5 +1,6 @@
 [build]
-command = "echo 'Building portfolio - $(date)'"  publish = "."
+  command = "echo 'Building portfolio - $(date)'"
+  publish = "."
 
 [functions]
   directory = "netlify/functions"

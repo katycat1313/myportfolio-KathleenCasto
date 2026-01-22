@@ -1,41 +1,32 @@
-# Hi, I'm Kathleen! 👋
+# Kathleen Casto | AI Implementation Specialist & Product Architect
 
-Welcome to my interactive portfolio. I decided to build something a little different—a chatbot interface that showcases my UI/UX design work and developer journey in a conversational way.
+Professional portfolio showcasing the intersection of 10+ years in Business Management and cutting-edge AI Engineering. Specialist in building **Agentic Workflows**, **SaaS Architectures**, and **Automated Data Pipelines**.
 
-**[➡️ View the Live Demo](https://your-netlify-url.netlify.app/)**
+## 🚀 Flagship Projects
 
-Instead of a static list of projects, this site adapts to who you are (a hiring manager, a potential client, or just exploring) and guides you through my work accordingly.
+### 1. MarketSim: Adaptive AI Marketing SaaS
+An agentic learning platform where a Gemini-powered mentor (ZOOMi) analyzes user behavior to dynamically adjust workshop complexity.
+*   **Tech:** Gemini API, ElevenLabs (Voice), Stripe, n8n, Supabase.
+*   **Key Feature:** Proactive AI agents that learn user strengths and weaknesses.
 
-## 🚀 How It Works
+### 2. info-craft-ppleax: AI Knowledge Architect
+A technical utility that automates the transformation of unstructured data (URLs/Text) into high-fidelity JSON Knowledge Bases.
+*   **Value:** Powers the "AI Liaison" on this portfolio to provide context-aware, consultative responses.
 
-1.  **The Hook:** It starts with a welcome animation and asks for your intent.
-2.  **The Logic:** Based on your choice, the conversation flows differently to show you the most relevant projects.
-3.  **The Tech:** It's built to be fast, accessible, and responsive.
+### 3. ccpractice: Voice-AI Skill Trainer
+A voice-to-voice training engine using natural-sounding voice synthesis to facilitate soft-skill roleplay.
+*   **Impact:** Reduced manual dev-ops testing time by 35% through automated n8n workflows.
 
-![Screenshot of the portfolio chatbot interface](https://via.placeholder.com/800x450.png?text=Your+Portfolio+Screenshot+Here)
+## 🛠 Technical Stack
+*   **AI Orchestration:** Gemini, OpenAI, Prompt Engineering, Agentic Flows.
+*   **Automation:** n8n, Zapier, Webhook Orchestration.
+*   **Full-Stack:** Stripe API, Supabase, HTML/CSS, JavaScript, Python (Developing).
+*   **Strategic:** SEO Strategy, Product Management, Customer Acquisition.
 
-## 🛠️ Under the Hood
+## 🤖 The AI Liaison
+The chatbot on this site is powered by my custom repository, **info-craft-ppleax**. It doesn't just answer questions; it consults on business problems using my indexed repositories as a knowledge base.
 
-I kept the tech stack clean and lightweight to ensure high performance:
-
-*   **HTML5:** Semantic markup for structure.
-*   **CSS3:** Custom properties (variables), glassmorphism effects, and animations.
-*   **Vanilla JavaScript:** No heavy frameworks here—just pure logic for the conversation engine and DOM manipulation.
-
-## 🎨 Design Highlights
-
-*   **Glassmorphic UI:** I used a dark theme with gradients and blur effects to give it a modern feel.
-*   **Accessibility:** I ensured the site is navigable and readable (WCAG 2.1 AA standards).
-*   **Responsive:** It looks great on mobile and desktop.
-
-## 📂 Project Structure
-
-If you're poking around the code, here is where everything lives:
-
-*   `index.html` - The main entry point.
-*   `styles.css` - All the styling, variables, and animations.
-*   `script.js` - The brain of the chatbot and project data.
-
----
-
-*Thanks for checking out my work! Feel free to connect or reach out if you want to chat about design, code, or new opportunities.*
+## 📫 Contact
+*   **Email:** casto8586@gmail.com
+*   **Phone:** (304) 410-8850
+*   **LinkedIn:** [Your Link Here]

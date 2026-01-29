@@ -77,9 +77,9 @@ Open your browser to: **http://localhost:3000**
 
 The following APIs are already configured in `.env`:
 
-- ✅ **Gemini AI**: `AIzaSyBbgve-GZbNffK9EvpfPjX7foVgtiZIVMI`
-- ✅ **Adzuna**: App ID `4812ee56`
-- ✅ **JSearch**: RapidAPI key configured
+- ✅ **Gemini AI**: Set in `.env` as `GEMINI_API_KEY`
+- ✅ **Adzuna**: Set in `.env` as `ADZUNA_APP_ID` / `ADZUNA_APP_KEY`
+- ✅ **JSearch**: Set in `.env` as `JSEARCH_API_KEY`
 - ⏳ **Google Sheets**: (Optional, add private key when ready)
 
 ## 🏗️ Architecture

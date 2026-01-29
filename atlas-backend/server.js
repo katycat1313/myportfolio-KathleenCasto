@@ -8,6 +8,15 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+// Friendly runtime check for required environment variables
+(() => {
+        const required = ['SUPABASE_URL', 'SUPABASE_KEY', 'ANTHROPIC_API_KEY'];
+        const missing = required.filter(k => !process.env[k]);
+        if (missing.length) {
+                console.warn(`\n[ATLAS] Warning: Missing environment variables: ${missing.join(', ')}\nSome features (DB writes, AI calls) may be disabled until these are set.\n`);
+        }
+})();
+
 // Initialize Anthropic and Supabase
 const anthropic = new Anthropic({
     apiKey: process.env.ANTHROPIC_API_KEY

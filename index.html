@@ -1,109 +1,361 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Kathleen Casto - AI Enablement Specialist & Technical Product Lead. Architecting Agentic AI systems and full-stack SaaS platforms.">
     <title>Kathleen Casto — AI Enablement Specialist</title>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+    <!-- Animated background -->
+    <canvas id="particleCanvas" aria-hidden="true"></canvas>
     <div class="background-gradient" aria-hidden="true"></div>
 
-    <main class="container">
-        <div class="welcome-screen" id="welcomeScreen">
-            <h1 class="welcome-title">
-                <span class="gradient-text">AI Implementation Portfolio</span>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-logo">KC</a>
+            <div class="nav-links" id="navLinks">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button class="nav-resume-btn" onclick="downloadResume()">Download Resume</button>
+            <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content reveal">
+            <div class="hero-badge">AI Enablement Specialist</div>
+            <h1 class="hero-name">
+                <span class="gradient-text">Kathleen Casto</span>
             </h1>
-            <p class="welcome-subtitle">
-                Let me guide you through Kathleen's AI Enablement work
+            <p class="hero-title">Technical Product Lead</p>
+            <p class="hero-tagline">
+                <span class="tagline-item">Agentic AI Systems</span>
+                <span class="tagline-divider"></span>
+                <span class="tagline-item">7-Day Rapid Prototyping</span>
+                <span class="tagline-divider"></span>
+                <span class="tagline-item">Creative Automation</span>
             </p>
-            <div class="loading-dots">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <button class="btn btn-secondary" onclick="downloadResume()">Download Resume</button>
+            </div>
+            <div class="hero-contact-bar">
+                <span>Belle, WV (Remote)</span>
+                <span class="bar-dot"></span>
+                <a href="mailto:casto8586@gmail.com">casto8586@gmail.com</a>
+                <span class="bar-dot"></span>
+                <span>(304) 543-8135</span>
             </div>
         </div>
-
-        <div class="chat-container" id="chatContainer" aria-label="Portfolio guide chatbot">
-            <div class="chat-header">
-                <div class="bot-avatar">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                    </svg>
-                </div>
-                <div class="bot-info">
-                    <h2 class="bot-name">AI Liaison</h2>
-                    <p class="bot-status">
-                        <span class="status-dot"></span>
-                        Online
-                    </p>
-                </div>
-            </div>
-
-            <div class="messages" id="messagesContainer" role="log" aria-live="polite" aria-atomic="false">
-                <!-- Messages will be added here dynamically -->
-            </div>
-
-            <div class="typing-indicator" id="typingIndicator" aria-label="Bot is typing">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-
-            <div class="quick-replies" id="quickReplies" role="group" aria-label="Quick reply options">
-                <!-- Quick reply buttons will be added here dynamically -->
-            </div>
-
-            <div class="chat-input-container">
-                <label for="chatInput" class="sr-only">Type your message</label>
-                <input type="text" id="chatInput" class="chat-input" placeholder="Type your message..."
-                    autocomplete="off" aria-label="Message input" />
-                <button id="sendButton" class="send-button" aria-label="Send message" type="button">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M22 2L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                </button>
-            </div>
+        <div class="hero-scroll-indicator" aria-hidden="true">
+            <div class="scroll-line"></div>
         </div>
+    </section>
 
-        <div class="project-modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="projectTitle">
-            <div class="project-modal-content">
-                <button class="close-modal" id="closeModal" aria-label="Close project showcase">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                    </svg>
-                </button>
-                <div id="projectContent">
-                    <!-- Project content will be loaded here -->
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="section-inner">
+            <h2 class="section-title reveal"><span class="gradient-text">Executive Summary</span></h2>
+            <div class="about-card reveal">
+                <p>Strategic AI Solutions Architect and Enablement Specialist with 20 years of professional experience bridging the gap between <strong>Operational Excellence</strong> and <strong>Creative Enablement</strong>. Expert at architecting <strong>Agentic AI systems</strong> and <strong>full-stack SaaS platforms</strong> that automate high-volume production while maintaining ethical standards. Specialist in <strong>AI Upskilling</strong> and <strong>Rapid Prototyping</strong>, with a proven ability to deploy functional, human-centric solutions in 7-day development cycles. Currently dedicated to helping creative teams adopt AI as a high-performance tool for Transformation, not a crutch.</p>
+            </div>
+            <div class="stats-row">
+                <div class="stat-card reveal">
+                    <div class="stat-number" data-target="20">0</div>
+                    <div class="stat-suffix">+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-card reveal">
+                    <div class="stat-number" data-target="40">0</div>
+                    <div class="stat-suffix">%</div>
+                    <div class="stat-label">Learning Curve Reduction</div>
+                </div>
+                <div class="stat-card reveal">
+                    <div class="stat-number" data-target="50">0</div>
+                    <div class="stat-suffix">+</div>
+                    <div class="stat-label">Remix Formats</div>
+                </div>
+                <div class="stat-card reveal">
+                    <div class="stat-number" data-target="7">0</div>
+                    <div class="stat-suffix">-Day</div>
+                    <div class="stat-label">Dev Cycles</div>
                 </div>
             </div>
         </div>
-    </main>
+    </section>
 
+    <!-- Skills Section -->
+    <section class="section section-alt" id="skills">
+        <div class="section-inner">
+            <h2 class="section-title reveal"><span class="gradient-text">Technical Core</span></h2>
+            <div class="skills-grid">
+                <div class="skill-card reveal" data-glow="purple">
+                    <div class="skill-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <h3>AI Enablement & Transformation</h3>
+                    <ul>
+                        <li>Agentic Workflows</li>
+                        <li>Prompt Engineering (Gemini/OpenAI)</li>
+                        <li>AI Coaching Architecture</li>
+                        <li>Learning Experience Design</li>
+                    </ul>
+                </div>
+                <div class="skill-card reveal" data-glow="blue">
+                    <div class="skill-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v6m0 6v6m-7-7h6m6 0h6"/><path d="M5.6 5.6l4.3 4.3m4.2 4.2l4.3 4.3M5.6 18.4l4.3-4.3m4.2-4.2l4.3-4.3"/></svg>
+                    </div>
+                    <h3>Systems & Automation</h3>
+                    <ul>
+                        <li>n8n, Zapier, Webhooks</li>
+                        <li>Stripe API Integration</li>
+                        <li>Supabase & Data Pipelines</li>
+                        <li>Webhook Orchestration</li>
+                    </ul>
+                </div>
+                <div class="skill-card reveal" data-glow="pink">
+                    <div class="skill-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                    <h3>Creative Implementation</h3>
+                    <ul>
+                        <li>Automated Video Pipelines</li>
+                        <li>Behavioral Logic Mapping</li>
+                        <li>Conversion Rate Optimization</li>
+                        <li>Context Management</li>
+                    </ul>
+                </div>
+                <div class="skill-card reveal" data-glow="cyan">
+                    <div class="skill-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                    </div>
+                    <h3>Product Strategy</h3>
+                    <ul>
+                        <li>Modular Architecture</li>
+                        <li>ROI Alignment</li>
+                        <li>Technical Liaison for Agile</li>
+                        <li>Full Product Lifecycle</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="section-inner">
+            <h2 class="section-title reveal"><span class="gradient-text">AI Project Portfolio</span></h2>
+            <p class="section-subtitle reveal">Proof of Work — Independent AI Product Developer | 2023 – Present</p>
+            <div class="projects-grid">
+                <!-- MarketSim -->
+                <div class="project-card reveal" onclick="openProjectModal(0)">
+                    <div class="project-card-glow"></div>
+                    <div class="project-card-header">
+                        <div class="project-icon purple">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                        </div>
+                        <div class="project-status live">Live</div>
+                    </div>
+                    <h3>MarketSim</h3>
+                    <p class="project-subtitle">Adaptive Agentic Learning SaaS</p>
+                    <p class="project-desc">Full-stack learning environment featuring an Agentic AI Mentor (ZOOMi) that analyzes user behavior and dynamically modifies content difficulty.</p>
+                    <div class="project-tags">
+                        <span class="tag">Gemini API</span>
+                        <span class="tag">ElevenLabs</span>
+                        <span class="tag">Stripe</span>
+                        <span class="tag">n8n</span>
+                        <span class="tag">Supabase</span>
+                    </div>
+                    <div class="project-impact">
+                        <span class="impact-stat">40%</span> learning curve reduction
+                    </div>
+                </div>
+
+                <!-- Raw Blocks AI -->
+                <div class="project-card reveal" onclick="openProjectModal(1)">
+                    <div class="project-card-glow"></div>
+                    <div class="project-card-header">
+                        <div class="project-icon blue">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="2"/><path d="M7 2v20"/><path d="M17 2v20"/><path d="M2 12h20"/></svg>
+                        </div>
+                        <div class="project-status live">Shipped</div>
+                    </div>
+                    <h3>Raw Blocks AI</h3>
+                    <p class="project-subtitle">Agentic Creative Pipeline (Countdown Studio)</p>
+                    <p class="project-desc">Professional-grade video production platform using Modular Box Architecture and a 5-agent autonomous team.</p>
+                    <div class="project-tags">
+                        <span class="tag">Agentic AI</span>
+                        <span class="tag">Video Production</span>
+                        <span class="tag">Modular Architecture</span>
+                    </div>
+                    <div class="project-impact">
+                        <span class="impact-stat">50+</span> remix formats, zero friction
+                    </div>
+                </div>
+
+                <!-- ccpractice -->
+                <div class="project-card reveal" onclick="openProjectModal(2)">
+                    <div class="project-card-glow"></div>
+                    <div class="project-card-header">
+                        <div class="project-icon pink">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+                        </div>
+                        <div class="project-status live">Live</div>
+                    </div>
+                    <h3>ccpractice</h3>
+                    <p class="project-subtitle">AI Conversational Skill-Builder</p>
+                    <p class="project-desc">Voice-to-voice training application using ElevenLabs and Gemini for soft-skill roleplay and communication upskilling.</p>
+                    <div class="project-tags">
+                        <span class="tag">ElevenLabs</span>
+                        <span class="tag">Gemini</span>
+                        <span class="tag">n8n</span>
+                        <span class="tag">Voice AI</span>
+                    </div>
+                    <div class="project-impact">
+                        <span class="impact-stat">35%</span> dev-ops overhead reduction
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section section-alt" id="experience">
+        <div class="section-inner">
+            <h2 class="section-title reveal"><span class="gradient-text">Professional Background</span></h2>
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker active"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023 – Present</div>
+                        <h3>Independent AI Product Developer & Technical Lead</h3>
+                        <p>Architected and shipped a proprietary suite of AI-native enablement tools. Built MarketSim, Raw Blocks AI, and ccpractice — full-stack platforms with agentic AI systems, automated pipelines, and voice integration.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2013 – 2023</div>
+                        <h3>Lead Product Strategist & Digital Marketing Expert</h3>
+                        <p>Directed end-to-end technical and creative strategy for multi-million dollar digital campaigns, ensuring strict alignment with business ROI. Managed cross-functional Agile teams bridging marketing vision and technical execution.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section-title reveal" style="margin-top:4rem"><span class="gradient-text">Education & Certifications</span></h2>
+            <div class="edu-grid">
+                <div class="edu-card reveal">
+                    <h4>AAS in AI Software Engineering</h4>
+                    <p>Accelerated Candidate — Maestro College</p>
+                    <p class="edu-details">Python, Data Structures, Machine Learning Fundamentals, Agentic Orchestration</p>
+                </div>
+                <div class="edu-card reveal">
+                    <h4>Certifications</h4>
+                    <ul>
+                        <li>Google Ads Measurement</li>
+                        <li>Google Analytics</li>
+                        <li>AI-Powered Conversion Optimization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="section-inner contact-section">
+            <h2 class="section-title reveal"><span class="gradient-text">Let's Work Together</span></h2>
+            <p class="contact-intro reveal">Looking for an AI Enablement Specialist who architects agentic systems and delivers results in rapid development cycles? Let's talk.</p>
+            <div class="contact-grid reveal">
+                <a href="mailto:casto8586@gmail.com" class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    </div>
+                    <span>casto8586@gmail.com</span>
+                </a>
+                <a href="tel:+13045438135" class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    </div>
+                    <span>(304) 543-8135</span>
+                </a>
+                <a href="https://linkedin.com/in/kathleencasto" target="_blank" rel="noopener noreferrer" class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                    </div>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/katycat1313" target="_blank" rel="noopener noreferrer" class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                    </div>
+                    <span>GitHub</span>
+                </a>
+            </div>
+            <div class="contact-cta reveal">
+                <button class="btn btn-primary btn-lg" onclick="downloadResume()">Download Full Resume</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="footer">
-        <p>Designed & Built by Kathleen Casto © 2026</p>
+        <p>Designed & Built by Kathleen Casto &copy; 2026</p>
     </footer>
+
+    <!-- Project Modal -->
+    <div class="project-modal" id="projectModal" role="dialog" aria-modal="true">
+        <div class="project-modal-content">
+            <button class="close-modal" id="closeModal" aria-label="Close" onclick="closeProjectModal()">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+            </button>
+            <div id="projectContent"></div>
+        </div>
+    </div>
+
+    <!-- Chatbot Widget -->
+    <button class="chatbot-toggle" id="chatbotToggle" aria-label="Open AI assistant">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        <span class="chatbot-pulse"></span>
+    </button>
+
+    <div class="chatbot-panel" id="chatbotPanel">
+        <div class="chat-header">
+            <div class="bot-avatar">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <div class="bot-info">
+                <h2 class="bot-name">AI Liaison</h2>
+                <p class="bot-status"><span class="status-dot"></span> Online</p>
+            </div>
+            <button class="chat-close" onclick="toggleChatbot()" aria-label="Close chat">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+            </button>
+        </div>
+        <div class="messages" id="messagesContainer" role="log" aria-live="polite"></div>
+        <div class="typing-indicator" id="typingIndicator"><span></span><span></span><span></span></div>
+        <div class="quick-replies" id="quickReplies" role="group"></div>
+        <div class="chat-input-container">
+            <input type="text" id="chatInput" class="chat-input" placeholder="Ask about Kathleen's work..." autocomplete="off">
+            <button id="sendButton" class="send-button" type="button" aria-label="Send">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13"/><path d="M22 2L15 22L11 13L2 9L22 2Z"/></svg>
+            </button>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
-
 </html>

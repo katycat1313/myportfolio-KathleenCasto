@@ -46,7 +46,7 @@ function initializeChatbot() {
 
 function startConversation() {
     const greeting = {
-        text: "Hey there! 👋 I'm your guide to Kathleen's UI/UX design work. I'm here to show you around and answer any questions you might have.",
+        text: "Hey there! 👋 I'm your guide to Kathleen's AI Enablement work. I'm here to show you around and answer any questions you might have.",
         delay: 500
     };
 
@@ -55,8 +55,8 @@ function startConversation() {
             const question = "What brings you here today?";
             addBotMessage(question, 800, () => {
                 showQuickReplies([
-                    { text: "I'm hiring for a UI/UX role", value: "hiring" },
-                    { text: "I need design services", value: "client" },
+                    { text: "I'm hiring for an AI role", value: "hiring" },
+                    { text: "I need AI enablement services", value: "client" },
                     { text: "Buy a digital product", value: "buy_product" },
                     { text: "Just exploring", value: "exploring" }
                 ]);
@@ -116,8 +116,8 @@ function handleSendMessage() {
 function processUserInput(input) {
     const lowerInput = input.toLowerCase();
 
-    const salesKeywords = ['hire', 'project', 'need designer', 'freelance', 'help with',
-        'looking for', 'budget', 'timeline', 'design services'];
+    const salesKeywords = ['hire', 'project', 'need ai', 'freelance', 'help with',
+        'looking for', 'budget', 'timeline', 'enablement services', 'automation'];
     const isSalesIntent = salesKeywords.some(keyword => lowerInput.includes(keyword));
 
     if (isSalesIntent && chatState.mode === 'portfolio') {
@@ -132,7 +132,7 @@ function handlePortfolioMode(input) {
     const lowerInput = input.toLowerCase();
 
     if (lowerInput.includes('experience') || lowerInput.includes('background')) {
-        addBotMessage("Kathleen is a UI/UX designer with a passion for creating accessible, beautiful, and functional interfaces. She specializes in modern web design, design systems, and interaction design.", 1000, () => {
+        addBotMessage("Kathleen is an AI Enablement Specialist & Technical Product Lead with 20 years of experience bridging Operational Excellence and Creative Enablement. She architects Agentic AI systems and full-stack SaaS platforms, specializing in AI Upskilling and Rapid Prototyping with 7-day development cycles.", 1000, () => {
             setTimeout(() => {
                 addBotMessage("Would you like to see some projects?", 800, () => {
                     showQuickReplies([
@@ -143,7 +143,7 @@ function handlePortfolioMode(input) {
             }, 1500);
         });
     } else if (lowerInput.includes('skills') || lowerInput.includes('tools')) {
-        addBotMessage("Kathleen's skillset includes:<br><br>• UI/UX Design<br>• Interaction Design<br>• Design Systems<br>• Accessibility (WCAG)<br>• Figma, Adobe XD<br>• HTML/CSS/JavaScript<br>• React, Next.js", 1000, () => {
+        addBotMessage("Kathleen's Technical Core:<br><br><strong>AI Enablement:</strong> Agentic Workflows, Prompt Engineering (Gemini/OpenAI), AI Coaching Architecture, Learning Experience Design<br><br><strong>Systems & Automation:</strong> n8n, Zapier, Webhook Orchestration, Stripe API, Supabase, Data Pipelines<br><br><strong>Creative Implementation:</strong> Automated Video Production, Behavioral Logic Mapping, CRO, Context Management<br><br><strong>Product Strategy:</strong> Modular Architecture, ROI Alignment, Technical Liaison for Agile Teams", 1000, () => {
             setTimeout(() => {
                 showQuickReplies([
                     { text: "Show me projects", value: "show_projects" },
@@ -152,7 +152,7 @@ function handlePortfolioMode(input) {
             }, 1500);
         });
     } else if (lowerInput.includes('contact') || lowerInput.includes('reach out') || lowerInput.includes('email')) {
-        addBotMessage("Great! You can reach Kathleen at:<br><br>📧 Email: [email protected]<br>💼 LinkedIn: linkedin.com/in/kathleencasto<br>🌐 Portfolio: portfolio.smartintakesolutions.space", 1000, () => {
+        addBotMessage("Great! You can reach Kathleen at:<br><br>📧 Email: casto8586@gmail.com<br>📱 Phone: (304) 543-8135<br>💼 LinkedIn: <a href='https://linkedin.com/in/kathleencasto' target='_blank'>LinkedIn Profile</a><br>🐙 GitHub: <a href='https://github.com/katycat1313' target='_blank'>katycat1313</a><br>🌐 Portfolio: <a href='https://portfolio.smartintakesolutions.space' target='_blank'>portfolio.smartintakesolutions.space</a>", 1000, () => {
             setTimeout(() => {
                 addBotMessage("Is there anything else you'd like to know?", 800);
             }, 1500);
@@ -171,9 +171,9 @@ function handleSalesMode(input) {
         setTimeout(() => {
             addBotMessage("What type of project are you working on?", 800, () => {
                 showQuickReplies([
-                    { text: "Website design", value: "website" },
-                    { text: "Mobile app", value: "mobile" },
-                    { text: "Design system", value: "design_system" },
+                    { text: "AI Automation", value: "website" },
+                    { text: "Agentic AI System", value: "mobile" },
+                    { text: "AI Enablement/Training", value: "design_system" },
                     { text: "Other", value: "other_project" }
                 ]);
             });
@@ -301,13 +301,13 @@ function handleQuickReply(reply) {
             break;
 
         case 'process':
-            addBotMessage("Kathleen follows a user-centered design process:<br><br>1. <strong>Research & Discovery</strong> - Understanding users and business goals<br>2. <strong>Ideation & Sketching</strong> - Exploring solutions<br>3. <strong>Prototyping</strong> - Creating interactive mockups<br>4. <strong>Testing & Iteration</strong> - Validating with real users<br>5. <strong>Implementation Support</strong> - Working with developers", 1200);
+            addBotMessage("Kathleen follows a rapid AI development process:<br><br>1. <strong>Discovery & ROI Alignment</strong> - Understanding business goals and automation opportunities<br>2. <strong>Agentic Architecture Design</strong> - Mapping workflows and modular system design<br>3. <strong>Rapid Prototyping</strong> - Functional solutions in 7-day development cycles<br>4. <strong>Validation & Ethics Gates</strong> - Ensuring AI output is ethical and brand-aligned<br>5. <strong>Enablement & Upskilling</strong> - Coaching teams to adopt AI as a high-performance tool", 1200);
             break;
 
         case 'website':
         case 'mobile':
         case 'design_system':
-            addBotMessage(`Perfect! ${reply.text} projects are right in Kathleen's wheelhouse. Let me show you some relevant examples.`, 1000, () => {
+            addBotMessage(`Perfect! ${reply.text} is right in Kathleen's wheelhouse. Let me show you some relevant examples.`, 1000, () => {
                 setTimeout(() => showProjects(), 1200);
             });
             break;
@@ -400,31 +400,31 @@ function closeProjectModal() {
 function getProjectData() {
     return [
         {
-            title: "Neural Analytics Dashboard",
-            description: "A real-time analytics interface for AI-powered insights with data visualization and interactive controls.",
-            tags: ["UI Design", "Data Viz", "React"],
-            image: "assets/projects/neural-dashboard.png",
-            challenge: "Users needed to monitor complex AI model performance in real-time while maintaining clarity and avoiding information overload.",
-            solution: "Designed a clean, card-based dashboard with progressive disclosure. Key metrics are always visible, while detailed analytics are accessible through intuitive drill-downs. Used color coding and micro-animations to highlight important changes.",
-            impact: "Reduced time-to-insight by 40% and increased user engagement by 60%. Users reported the interface made complex data 'actually understandable.'"
+            title: "MarketSim – Adaptive Agentic Learning SaaS",
+            description: "A full-stack learning environment featuring an Agentic AI Mentor (ZOOMi) that analyzes user behavior and dynamically modifies content difficulty.",
+            tags: ["Gemini API", "ElevenLabs", "Stripe", "n8n", "Supabase"],
+            image: "",
+            challenge: "Users learning AI enablement skills face steep learning curves with static, one-size-fits-all training content.",
+            solution: "Built an Agentic AI Mentor (ZOOMi) that analyzes user behavior in real-time and dynamically modifies content difficulty, delivering personalized coaching logic.",
+            impact: "Designed for AI Enablement, reducing the user learning curve by 40% through personalized, real-time coaching logic."
         },
         {
-            title: "E-commerce Mobile Experience",
-            description: "Complete UX redesign of a mobile shopping app focused on conversion optimization and accessibility.",
-            tags: ["UX", "Mobile", "A11y"],
-            image: "assets/projects/ecommerce-mobile.png",
-            challenge: "The existing app had a 65% cart abandonment rate and poor accessibility scores, particularly for users with visual impairments.",
-            solution: "Reimagined the entire user flow with a mobile-first approach. Simplified navigation, improved touch targets, implemented WCAG 2.1 AA standards, and streamlined checkout to 3 steps instead of 7.",
-            impact: "Cart abandonment dropped to 35%, conversion rate increased 45%, and accessibility score improved from 68 to 94 on Lighthouse audits."
+            title: "Raw Blocks AI (Countdown Studio) – Agentic Creative Pipeline",
+            description: "A professional-grade video production platform using Modular Box Architecture and a 5-agent autonomous team.",
+            tags: ["Agentic AI", "Video Production", "Modular Architecture"],
+            image: "",
+            challenge: "Creative teams spend excessive time on repetitive video production tasks, with no way to ensure AI-generated output stays ethical and brand-aligned.",
+            solution: "Built a 5-agent autonomous team with Modular Box Architecture that automates creative workflows from product URL to finished video short. Engineered 'Validation Gates' for ethical, brand-aligned output.",
+            impact: "Enables users to remix assets into 50+ formats with zero technical friction. Automates end-to-end creative workflows."
         },
         {
-            title: "Design System & Component Library",
-            description: "Comprehensive design system with reusable components, tokens, and documentation for a SaaS platform.",
-            tags: ["Design System", "Figma", "Documentation"],
-            image: "assets/projects/design-system.png",
-            challenge: "Multiple teams were creating inconsistent interfaces, leading to poor user experience and slow development cycles.",
-            solution: "Built a complete design system from scratch with atomic design principles. Created 60+ components, established design tokens, and provided interactive documentation with code examples.",
-            impact: "Development time for new features reduced by 50%, design consistency improved across all products, and onboarding time for new designers decreased from 2 weeks to 3 days."
+            title: "ccpractice – AI Conversational Skill-Builder",
+            description: "A voice-to-voice training application using ElevenLabs and Gemini for soft-skill roleplay and communication upskilling.",
+            tags: ["ElevenLabs", "Gemini", "n8n", "Voice AI"],
+            image: "",
+            challenge: "Professionals need realistic practice environments for communication and soft-skills without high-cost coaching sessions.",
+            solution: "Built a voice-to-voice training app using ElevenLabs and Gemini to facilitate soft-skill roleplay. Utilized n8n for automated backend testing.",
+            impact: "Reduced manual dev-ops overhead by 35% through n8n automation. Provides accessible, scalable communication upskilling."
         }
     ];
 }

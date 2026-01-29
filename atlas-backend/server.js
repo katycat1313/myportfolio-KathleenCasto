@@ -56,9 +56,9 @@ const atlasKnowledge = {
     },
     about: {
           name: "Kathleen",
-          role: "AI-Assisted Developer",
-          expertise: ["AI Integration", "Full-Stack Development", "Automation", "Real-time Systems"],
-          approach: "Build products that actually work. Ship early, iterate based on feedback."
+          role: "AI Enablement Specialist & Technical Product Lead",
+          expertise: ["Agentic AI Systems", "AI Upskilling & Coaching", "Full-Stack SaaS Platforms", "Creative Automation Pipelines", "Data Pipeline Engineering"],
+          approach: "20 years bridging Operational Excellence and Creative Enablement. Deploy functional, human-centric solutions in 7-day development cycles. Helping creative teams adopt AI as a high-performance tool for Transformation."
     }
 };
 

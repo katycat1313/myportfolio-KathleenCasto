@@ -620,6 +620,7 @@ strong { color: var(--text-primary); font-weight: 600; }
     transition: all var(--transition-base);
 }
 .chatbot-toggle:hover { transform: scale(1.1); box-shadow: 0 4px 30px rgba(139, 92, 246, 0.5); }
+.chatbot-toggle.hidden { display: none; }
 
 .chatbot-pulse {
     position: absolute; top: -2px; right: -2px;
@@ -769,6 +770,15 @@ strong { color: var(--text-primary); font-weight: 600; }
 }
 .send-button:hover { transform: translateY(-2px); box-shadow: var(--shadow-glow-purple); }
 
+.project-card-chat {
+    background: var(--bg-glass); border: 1px solid var(--border-glass);
+    border-radius: 12px; padding: 0.75rem; cursor: pointer;
+    transition: all var(--transition-base);
+}
+.project-card-chat:hover { border-color: var(--primary-purple); background: var(--bg-glass-hover); }
+.project-card-chat h3 { font-size: 0.9rem; margin-bottom: 0.25rem; font-family: var(--font-display); }
+.project-card-chat p { font-size: 0.8rem; margin-bottom: 0.5rem; }
+
 /* ═══════════════════════════════════════════
    Scroll Reveal Animation
    ═══════════════════════════════════════════ */
@@ -792,7 +802,7 @@ strong { color: var(--text-primary); font-weight: 600; }
     .nav-links, .nav-resume-btn { display: none; }
     .nav-hamburger { display: flex; }
 
-    .nav-links.open {
+    .nav-links.active {
         display: flex; flex-direction: column; position: absolute;
         top: 100%; left: 0; right: 0; background: rgba(10, 10, 15, 0.98);
         padding: 1.5rem 2rem; gap: 1rem; border-bottom: 1px solid var(--border-glass);

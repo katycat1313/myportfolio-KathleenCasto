@@ -139,27 +139,69 @@ navLinks.querySelectorAll('a').forEach(link => {
 const projectData = [
     {
         title: "MarketSim — Adaptive Agentic Learning SaaS",
-        description: "A full-stack learning environment featuring an Agentic AI Mentor (ZOOMi) that analyzes user behavior and dynamically modifies content difficulty.",
+        description: "Full-stack learning environment featuring an Agentic AI Mentor (ZOOMi) that analyzes user behavior and dynamically modifies content difficulty.",
         tags: ["Gemini API", "ElevenLabs", "Stripe", "n8n", "Supabase"],
-        challenge: "Users learning AI enablement skills face steep learning curves with static, one-size-fits-all training content that doesn't adapt to individual progress.",
-        solution: "Built an Agentic AI Mentor (ZOOMi) that analyzes user behavior in real-time and dynamically modifies content difficulty, delivering personalized coaching logic with automated feedback loops.",
-        impact: "Designed for AI Enablement, reducing the user learning curve by 40% through personalized, real-time coaching logic. Full Stripe integration for monetization."
+        image: "https://github.com/user-attachments/assets/37b4a893-6511-46c8-92c5-e1528e7c2db2",
+        challenge: "Users learning AI enablement skills face steep learning curves with static, one-size-fits-all training content.",
+        solution: "Built an Agentic AI Mentor (ZOOMi) that analyzes user behavior in real-time and dynamically modifies content difficulty, delivering personalized coaching logic.",
+        impact: "40% learning curve reduction through personalized, real-time coaching logic. Full Stripe integration for monetization."
     },
     {
         title: "Raw Blocks AI (Countdown Studio) — Agentic Creative Pipeline",
-        description: "A professional-grade video production platform using Modular Box Architecture and a 5-agent autonomous team.",
+        description: "Professional-grade video production platform using Modular Box Architecture and a 5-agent autonomous team.",
         tags: ["Agentic AI", "Video Production", "Modular Architecture"],
-        challenge: "Creative teams spend excessive time on repetitive video production tasks, with no way to ensure AI-generated output stays ethical and brand-aligned.",
-        solution: "Built a 5-agent autonomous team with Modular Box Architecture that automates creative workflows from product URL to finished video short. Engineered 'Validation Gates' for ethical, brand-aligned output.",
-        impact: "Enables users to remix assets into 50+ formats with zero technical friction. Automates end-to-end creative workflows while maintaining brand integrity."
+        challenge: "Creative teams spend excessive time on repetitive video production tasks with no way to ensure AI output stays ethical and brand-aligned.",
+        solution: "Built a 5-agent autonomous team with Modular Box Architecture that automates creative workflows from product URL to finished video short with Validation Gates.",
+        impact: "50+ remix formats with zero technical friction. Automates end-to-end creative workflows while maintaining brand integrity."
     },
     {
         title: "ccpractice — AI Conversational Skill-Builder",
-        description: "A voice-to-voice training application using ElevenLabs and Gemini for soft-skill roleplay and communication upskilling.",
+        description: "Voice-to-voice training application using ElevenLabs and Gemini for soft-skill roleplay and communication upskilling.",
         tags: ["ElevenLabs", "Gemini", "n8n", "Voice AI"],
         challenge: "Professionals need realistic practice environments for communication and soft-skills without high-cost coaching sessions.",
-        solution: "Built a voice-to-voice training app using ElevenLabs and Gemini to facilitate soft-skill roleplay. Utilized n8n for automated backend testing and workflow orchestration.",
-        impact: "Reduced manual dev-ops overhead by 35% through n8n automation. Provides accessible, scalable communication upskilling for professionals."
+        solution: "Built a voice-to-voice training app using ElevenLabs and Gemini for soft-skill roleplay with n8n automated backend testing.",
+        impact: "35% reduction in manual dev-ops overhead. Accessible, scalable communication upskilling for professionals."
+    },
+    {
+        title: "Nexus Omni Agent — Hands-Free AI Personal Assistant",
+        description: "Conversational AI assistant that learns through dialogue, stores tasks in structured JSON for recall, and works autonomously.",
+        tags: ["React 19", "Deepgram", "Google Cloud TTS", "Supabase", "TypeScript"],
+        challenge: "Users need a conversational AI that maintains context across multi-turn dialogues and responds intelligently in real-time.",
+        solution: "Multi-modal AI orchestration with Deepgram STT, context-aware LLM reasoning, and Google Cloud TTS with modular architecture.",
+        impact: "Hands-free operation, low-latency conversational flow, session persistence across interactions."
+    },
+    {
+        title: "ConversionFlow AI — Autonomous Campaign Engine",
+        description: "Campaign-in-a-Box engine that takes a product idea, performs deep market research, and generates high-converting UGC videos with optimized posting schedules.",
+        tags: ["Gemini 3.1", "Google Veo", "Node.js", "Sentiment Analysis"],
+        challenge: "Affiliate marketers struggle creating authentic UGC, understanding market sentiment, and optimizing posting schedules.",
+        solution: "Deep market psychography analysis with Gemini vision models generating hyper-realistic UGC. Real-time sentiment mapping from social platforms.",
+        impact: "Eliminates awareness phase, goes straight to conversion. Multiple video/image variations optimized per platform."
+    },
+    {
+        title: "InfoCraft Plex — Agentic Knowledge Architect",
+        description: "Transforms unstructured web content into structured JSON knowledge bases optimized for RAG performance with multi-LLM orchestration.",
+        tags: ["React 18", "TypeScript", "Supabase Edge Functions", "Vertex AI"],
+        challenge: "RAG systems suffer from context degradation when feeding raw unstructured data, causing LLM hallucinations.",
+        solution: "Transforms messy HTML/text into validated JSON entries. Toggles between Gemini, GPT-4, and Claude for varying complexity levels.",
+        impact: "Reduces LLM hallucinations by up to 40%. Foundation for agentic systems and structured data pipelines."
+    },
+    {
+        title: "Gadgets and Those — AI-Powered Product Discovery",
+        description: "Affiliate product discovery platform with dual-mode AI Scout combining text and real-time voice chat for the @GadgetsAndThose TikTok community.",
+        tags: ["React", "Gemini Flash", "Decap CMS", "TTS/STT"],
+        image: "https://github.com/user-attachments/assets/7a941dd0-4c67-4871-8bb0-e3e43a2aafcf",
+        challenge: "TikTok community members need personalized gadget recommendations via natural conversation.",
+        solution: "Dual-mode AI Discovery Scout with text and real-time voice chat that agentically analyzes user setups and provides intelligent product reasoning.",
+        impact: "Seamless text-to-voice switching, proactive engagement, community-driven product discovery."
+    },
+    {
+        title: "Gemini Voice Chat — Real-Time Voice AI",
+        description: "Browser-based real-time voice chat powered by Gemini 2.5 Flash native audio with live audio visualization.",
+        tags: ["React", "TypeScript", "Web Audio API", "Gemini 2.5 Flash"],
+        challenge: "Voice chat applications require seamless real-time audio processing with minimal latency.",
+        solution: "Native WebRTC and Web Audio API integration with Gemini 2.5 Flash. Captures 16kHz PCM, streams and plays back 24kHz with canvas visualization.",
+        impact: "Zero-installation browser-based voice chat with low latency, dynamic audio visualization, cross-platform support."
     }
 ];
 
@@ -168,11 +210,13 @@ function openProjectModal(index) {
     if (!project) return;
     const content = document.getElementById('projectContent');
     const tags = project.tags.map(t => `<span class="tag">${t}</span>`).join('');
+    const imageHtml = project.image ? `<img src="${project.image}" alt="${project.title}" style="width:100%;border-radius:12px;margin-bottom:1.5rem;border:1px solid var(--border-glass)">` : '';
 
     content.innerHTML = `
         <h2 class="modal-title gradient-text">${project.title}</h2>
         <div class="project-tags" style="margin-bottom:1.5rem">${tags}</div>
         <p style="color:var(--text-secondary);font-size:1.1rem;margin-bottom:2rem">${project.description}</p>
+        ${imageHtml}
         <h3>Challenge</h3>
         <p style="margin-bottom:1.5rem;line-height:1.8">${project.challenge}</p>
         <h3>Solution</h3>
@@ -261,6 +305,36 @@ ccpractice — AI Conversational Skill-Builder
   Voice-to-voice training app for soft-skill roleplay using
   ElevenLabs and Gemini with n8n automated backend testing.
   Impact: 35% reduction in manual dev-ops overhead.
+
+Nexus Omni Agent — Hands-Free AI Personal Assistant
+  Tech: React 19, Deepgram, Google Cloud TTS, Supabase, TypeScript
+  Multi-modal AI orchestration with speech-to-text, context-aware
+  LLM reasoning, and natural voice synthesis.
+  Impact: Hands-free operation with low-latency conversational flow.
+
+ConversionFlow AI — Autonomous Campaign Engine
+  Tech: Google Gemini 3.1, Google Veo, Node.js, Sentiment Analysis
+  Campaign-in-a-Box engine with deep market psychography analysis
+  and hyper-realistic UGC generation with optimized posting schedules.
+  Impact: Eliminates awareness phase, goes straight to conversion.
+
+InfoCraft Plex — Agentic Knowledge Architect
+  Tech: React 18, TypeScript, Supabase Edge Functions, Vertex AI
+  Transforms unstructured web content into structured JSON knowledge
+  bases optimized for RAG with multi-LLM orchestration.
+  Impact: Reduces LLM hallucinations by up to 40%.
+
+Gadgets and Those — AI-Powered Product Discovery
+  Tech: React, Gemini Flash, Decap CMS, TTS/STT, Netlify
+  Affiliate product discovery with dual-mode AI Scout combining
+  text and real-time voice chat for the @GadgetsAndThose community.
+  Impact: Seamless text-to-voice switching, proactive engagement.
+
+Gemini Voice Chat — Real-Time Voice AI
+  Tech: React, TypeScript, Web Audio API, Gemini 2.5 Flash
+  Browser-based real-time voice chat with native WebRTC integration
+  and live canvas audio visualization.
+  Impact: Zero-installation, low-latency voice AI across platforms.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PROFESSIONAL EXPERIENCE

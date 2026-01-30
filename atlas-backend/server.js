@@ -30,37 +30,71 @@ const supabase = createClient(
 // ATLAS Knowledge Base
 const atlasKnowledge = {
     projects: {
-          nexusOmniLink: {
-                  title: "Nexus Omni-Link",
-                  description: "AI agent platform that learns your workflows and automates them across platforms",
-                  challenge: "Multi-platform automation is fragmented and requires complex coding",
-                  solution: "Built multi-modal skill teaching engine with Puppeteer, Gemini, and n8n integration",
-                  impact: "Supports unlimited custom skills, maintains session persistence, integrates 500+ tools",
-                  tech: ["React", "Express.js", "Puppeteer", "Google Gemini", "n8n"]
+          marketSim: {
+                  title: "MarketSim — Adaptive Agentic Learning SaaS",
+                  description: "Full-stack learning environment featuring an Agentic AI Mentor (ZOOMi) that analyzes user behavior and dynamically modifies content difficulty.",
+                  challenge: "Users learning AI enablement skills face steep learning curves with static, one-size-fits-all training content.",
+                  solution: "Built an Agentic AI Mentor (ZOOMi) that analyzes user behavior in real-time and dynamically modifies content difficulty, delivering personalized coaching logic.",
+                  impact: "40% learning curve reduction through personalized, real-time coaching logic. Full Stripe integration for monetization.",
+                  tech: ["Gemini API", "ElevenLabs", "Stripe", "n8n", "Supabase"],
+                  image: "https://github.com/user-attachments/assets/37b4a893-6511-46c8-92c5-e1528e7c2db2"
+          },
+          rawBlocksAI: {
+                  title: "Raw Blocks AI (Countdown Studio) — Agentic Creative Pipeline",
+                  description: "Professional-grade video production platform using Modular Box Architecture and a 5-agent autonomous team.",
+                  challenge: "Creative teams spend excessive time on repetitive video production tasks with no way to ensure AI output stays ethical and brand-aligned.",
+                  solution: "Built a 5-agent autonomous team with Modular Box Architecture that automates creative workflows from product URL to finished video short. Engineered Validation Gates for ethical output.",
+                  impact: "50+ remix formats with zero technical friction. Automates end-to-end creative workflows while maintaining brand integrity.",
+                  tech: ["Agentic AI", "Video Production", "Modular Architecture"]
           },
           ccpractice: {
-                  title: "CCPractice - Sales Practice Platform",
-                  description: "AI-powered cold calling practice with real-time feedback",
-                  challenge: "Sales reps need realistic practice without risking real client calls",
-                  solution: "Real-time voice AI with Deepgram, multiple prospect personalities, instant feedback",
-                  impact: "4 apps (Cold Calling, Interview, Meeting, Presentation), zero recurring costs",
-                  tech: ["React", "Google Gemini", "Deepgram", "Supabase", "Real-time Audio"]
+                  title: "ccpractice — AI Conversational Skill-Builder",
+                  description: "Voice-to-voice training application using ElevenLabs and Gemini for soft-skill roleplay and communication upskilling.",
+                  challenge: "Professionals need realistic practice environments for communication and soft-skills without high-cost coaching sessions.",
+                  solution: "Built a voice-to-voice training app using ElevenLabs and Gemini to facilitate soft-skill roleplay with n8n automated backend testing.",
+                  impact: "35% reduction in manual dev-ops overhead. Provides accessible, scalable communication upskilling.",
+                  tech: ["ElevenLabs", "Gemini", "n8n", "Voice AI"]
           },
-          smartIntakeSolutions: {
-                  title: "Smart Intake Solutions",
-                  description: "Form builder for contractors to customize intake forms without coding",
-                  challenge: "Contractors spend hours on intake forms, missing critical information",
-                  solution: "Drag-drop builder, AI-suggested questions, mobile optimization, one-click deploy",
-                  impact: "40% reduction in follow-up calls, live at smartintakesolutions.space",
-                  tech: ["Form Builder", "AI", "Low-Code"]
+          nexusOmniAgent: {
+                  title: "Nexus Omni Agent — Hands-Free AI Personal Assistant",
+                  description: "Conversational AI assistant that learns through dialogue, stores tasks in structured JSON for recall, and works autonomously.",
+                  challenge: "Users need a conversational AI that maintains context across multi-turn dialogues and responds intelligently in real-time.",
+                  solution: "Multi-modal AI orchestration with Deepgram STT, context-aware LLM reasoning, and Google Cloud TTS. Modular architecture maintains conversation history.",
+                  impact: "Hands-free operation, low-latency conversational flow, session persistence across interactions.",
+                  tech: ["React 19", "Deepgram", "Google Cloud TTS", "Claude/Gemini", "Supabase", "TypeScript"]
           },
-          marketSim: {
-                  title: "MarketSim",
-                  description: "Interactive business simulation for teaching marketing strategy",
-                  challenge: "Students struggle to apply marketing theory to real decisions",
-                  solution: "Interactive simulation with AI competitors, real-time feedback, market dynamics",
-                  impact: "2+ hour engagement per session, validated simulation-based learning",
-                  tech: ["React", "Simulation Engine", "Game Mechanics"]
+          conversionFlowAI: {
+                  title: "ConversionFlow AI — Autonomous Campaign Engine",
+                  description: "Campaign-in-a-Box engine that takes a product idea, performs deep market research, and generates high-converting UGC videos with optimized posting schedules.",
+                  challenge: "Affiliate marketers struggle creating authentic UGC, understanding market sentiment, and optimizing posting schedules for conversion.",
+                  solution: "Deep market psychography analysis with Gemini vision models generating hyper-realistic UGC. Real-time sentiment mapping from Reddit, Twitter, TikTok.",
+                  impact: "Eliminates awareness phase, goes straight to conversion. Multiple video/image variations optimized per platform with affiliate link integration.",
+                  tech: ["Google Gemini 3.1", "Google Veo", "Node.js", "Sentiment Analysis", "Affiliate Integration"]
+          },
+          infoCraftPlex: {
+                  title: "InfoCraft Plex — Agentic Knowledge Architect",
+                  description: "Transforms unstructured web content into structured JSON knowledge bases optimized for RAG performance with multi-LLM orchestration.",
+                  challenge: "RAG systems suffer from context degradation when feeding raw unstructured data, causing LLM hallucinations.",
+                  solution: "Transforms messy HTML/text into validated JSON entries. Toggles between Gemini, GPT-4, and Claude for varying complexity. Uses Supabase Edge Functions.",
+                  impact: "Reduces LLM hallucinations by up to 40%. Provides foundation for agentic systems and structured data pipelines.",
+                  tech: ["React 18", "TypeScript", "Supabase Edge Functions", "Vertex AI", "OpenAI", "Anthropic API"]
+          },
+          gadgetsAndThose: {
+                  title: "Gadgets and Those — AI-Powered Product Discovery",
+                  description: "Affiliate product discovery platform with dual-mode AI Scout combining text and real-time voice chat for the @GadgetsAndThose TikTok community.",
+                  challenge: "TikTok community members need personalized gadget recommendations via natural conversation without manual browsing.",
+                  solution: "Dual-mode AI Discovery Scout with text and real-time voice chat. Agentically analyzes user setups and provides intelligent product reasoning.",
+                  impact: "Seamless text-to-voice switching, proactive engagement, community-driven product discovery with automated CMS integration.",
+                  tech: ["React", "Gemini Flash", "Decap CMS", "Netlify", "TTS/STT", "Tailwind CSS"],
+                  image: "https://github.com/user-attachments/assets/7a941dd0-4c67-4871-8bb0-e3e43a2aafcf"
+          },
+          geminiVoiceChat: {
+                  title: "Gemini Voice Chat — Real-Time Voice AI",
+                  description: "Browser-based real-time voice chat powered by Gemini 2.5 Flash native audio with live audio visualization.",
+                  challenge: "Voice chat applications require seamless real-time audio processing with minimal latency, which is technically complex.",
+                  solution: "Native WebRTC and Web Audio API integration with Gemini 2.5 Flash. Captures 16kHz PCM audio, streams to Gemini, plays back 24kHz with canvas visualization.",
+                  impact: "Zero-installation browser-based voice chat with low latency, dynamic audio visualization, cross-platform support.",
+                  tech: ["React", "TypeScript", "Web Audio API", "Gemini 2.5 Flash", "Canvas", "WebRTC"]
           }
     },
     about: {

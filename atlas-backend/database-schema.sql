@@ -122,7 +122,7 @@ SELECT
   COUNT(*) as total_conversations,
   COUNT(DISTINCT visitor_id) as unique_visitors,
   ARRAY_AGG(DISTINCT recommended_projects[1]) FILTER (WHERE recommended_projects IS NOT NULL) as top_projects,
-  AVG(EXTRACT(EPOCH FROM (response::text::length * INTERVAL '1 second'))) as avg_response_time
+  AVG(LENGTH(response)) as avg_response_length
 FROM conversations
 WHERE created_at > NOW() - INTERVAL '30 days'
 GROUP BY detected_intent;

@@ -12,7 +12,9 @@ Strategic AI Solutions Architect and Enablement Specialist with 20 years of prof
 ## AI Project Portfolio (Proof of Work)
 
 ### 1. MarketSim – Adaptive Agentic Learning SaaS
-A full-stack learning environment featuring an Agentic AI Mentor (ZOOMi) that analyzes user behavior and dynamically modifies content difficulty.
+A full-stack learning environment featuring an Agentic AI Mentor (ZOOMi) that analyzes
+
+user behavior and dynamically modifies content difficulty.
 *   **Impact:** Designed for AI Enablement, reducing the user learning curve by 40% through personalized, real-time coaching logic.
 *   **Tech:** Gemini API, ElevenLabs (Voice), Stripe, n8n, Supabase.
 
@@ -27,8 +29,9 @@ A voice-to-voice training application using ElevenLabs and Gemini to facilitate 
 
 ## Professional Background
 
-**Lead Product Strategist | Digital Marketing Expert | 2013 – 2023**
-Directed end-to-end technical and creative strategy for multi-million dollar digital campaigns, ensuring strict alignment with business ROI. Managed cross-functional Agile teams to bridge the gap between marketing vision and technical execution.
+Client Success and Operations Professional 
+2011-2025 
+With over a decade of experience in client success, I have become a dedicated professional who excels in delivering exceptional service and easily adapting to new challenges. I also thrive in high-pressure environments. 
 
 ## Education & Certifications
 
